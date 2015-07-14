@@ -126,6 +126,8 @@ namespace iTextSharp.text.html.simpleparser {
             if (value != null)
                 cell.PaddingRight = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
 
+            value = props["bordercolor"];
+            cell.BorderColor = Markup.DecodeColor(value);
             cell.UseDescender = true;
             value = props["bgcolor"];
             cell.BackgroundColor = Markup.DecodeColor(value);
