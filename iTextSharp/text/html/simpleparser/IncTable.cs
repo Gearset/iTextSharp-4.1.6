@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 /*
@@ -101,6 +102,16 @@ namespace iTextSharp.text.html.simpleparser {
                 ncol += ((PdfPCell)c0[k]).Colspan;
             }
             PdfPTable table = new PdfPTable(ncol);
+            String widths = (String)props["widths"];
+            if (widths != null)
+            {
+                List<int> intWidths = new List<int>();
+                foreach (var widthElement in widths.Split(','))
+                {
+                    intWidths.Add(int.Parse(widthElement));
+                }
+                table.SetWidths(intWidths.ToArray());
+            }
             String width = (String)props["width"];
             if (width == null)
                 table.WidthPercentage = 100;
