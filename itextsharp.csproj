@@ -840,6 +840,7 @@
     <Compile Include="iTextSharp\text\pdf\PdfRendition.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="iTextSharp\text\pdf\PdfResourceFileCache.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfResources.cs">
       <SubType>Code</SubType>
     </Compile>

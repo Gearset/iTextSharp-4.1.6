@@ -73,7 +73,14 @@ namespace iTextSharp.text.pdf {
         public RandomAccessFileOrArray(String filename) : this(filename, false) {
         }
         
-        public RandomAccessFileOrArray(String filename, bool forceRead) {
+        public RandomAccessFileOrArray(String filename, bool forceRead)
+        {
+            var cachedBytes = PdfResourceFileCache.Get(filename);
+            if (cachedBytes != null)
+            {
+                this.arrayIn = cachedBytes;
+                return;
+            }
             if (!File.Exists(filename)) {
                 if (filename.StartsWith("file:/") || filename.StartsWith("http://") || filename.StartsWith("https://")) {
                     Stream isp = WebRequest.Create(new Uri(filename)).GetResponse().GetResponseStream();
