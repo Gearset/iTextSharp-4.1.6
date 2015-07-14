@@ -99,6 +99,33 @@ namespace iTextSharp.text.html.simpleparser {
             value = props["cellpadding"];
             if (value != null)
                 cell.Padding = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+
+            // Advanced formatting - does not conform to HTML standards
+            value = props["bordertop"];
+            if (value != null)
+                cell.BorderWidthTop = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["borderbottom"];
+            if (value != null)
+                cell.BorderWidthBottom = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["borderleft"];
+            if (value != null)
+                cell.BorderWidthLeft = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["borderright"];
+            if (value != null)
+                cell.BorderWidthRight = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["cellpaddingtop"];
+            if (value != null)
+                cell.PaddingTop = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["cellpaddingbottom"];
+            if (value != null)
+                cell.PaddingBottom = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["cellpaddingleft"];
+            if (value != null)
+                cell.PaddingLeft = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+            value = props["cellpaddingright"];
+            if (value != null)
+                cell.PaddingRight = float.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
+
             cell.UseDescender = true;
             value = props["bgcolor"];
             cell.BackgroundColor = Markup.DecodeColor(value);
