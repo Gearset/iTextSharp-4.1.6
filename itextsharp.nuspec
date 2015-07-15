@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RedGate.iTextSharp</id>
+    <version>$version$</version>
+    <authors>Bruno Lowagie</authors>
+    <title>iTextSharp 4.1.6 (Redgate)</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>iTextSharp 4.1.6 with modifications by Redgate Software</summary>
+    <description>iTextSharp 4.1.6 with added support for tables and images</description>
+  </metadata>
+</package>
