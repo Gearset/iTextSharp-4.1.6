@@ -6,7 +6,7 @@ namespace iTextSharp.text.pdf
     {
         private static readonly ConcurrentDictionary<string, byte[]> s_Cache = new ConcurrentDictionary<string, byte[]>();
 
-        public static bool TrySet(string key, byte[] value)
+        public static bool Set(string key, byte[] value)
         {
             return s_Cache.TryAdd(key, value);
         }
