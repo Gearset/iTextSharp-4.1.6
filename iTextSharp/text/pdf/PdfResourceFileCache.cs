@@ -1,31 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Concurrent;
 
 namespace iTextSharp.text.pdf
 {
     public class PdfResourceFileCache
     {
-        private static Dictionary<string, byte[]> m_Cache = new Dictionary<string, byte[]>();
+        private static readonly ConcurrentDictionary<string, byte[]> s_Cache = new ConcurrentDictionary<string, byte[]>();
 
-        public static void Set(string key, byte[] value)
+        public static bool TrySet(string key, byte[] value)
         {
-            if (m_Cache.ContainsKey(key))
-            {
-                m_Cache[key] = value;
-            }
-            else
-            {
-                m_Cache.Add(key, value);
-            }
+            return s_Cache.TryAdd(key, value);
         }
 
         public static byte[] Get(string key)
         {
-            return m_Cache.ContainsKey(key) ? m_Cache[key] : null;
+            byte[] ret = null;
+            s_Cache.TryGetValue(key, out ret);
+            return ret;
         }
 
         public static bool ContainsKey(string key)
         {
-            return m_Cache.ContainsKey(key);
+            return s_Cache.ContainsKey(key);
         }
     }
 }
