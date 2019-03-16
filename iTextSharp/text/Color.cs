@@ -64,10 +64,6 @@ namespace iTextSharp.text {
             color = System.Drawing.Color.FromArgb((int)(alpha * 255 + .5), (int)(red * 255 + .5), (int)(green * 255 + .5), (int)(blue * 255 + .5));
         }
 
-        public Color(int argb) {
-            color = System.Drawing.Color.FromArgb(argb);
-        }
-
         /// <summary>
         /// Constructor for Color object
         /// </summary>
