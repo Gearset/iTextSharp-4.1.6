@@ -723,7 +723,7 @@ namespace iTextSharp.text.pdf {
         }
     
         /**
-         * Appends a Bêzier curve to the path, starting from the current point.
+         * Appends a Bï¿½zier curve to the path, starting from the current point.
          *
          * @param       x1      x-coordinate of the first control point
          * @param       y1      y-coordinate of the first control point
@@ -738,7 +738,7 @@ namespace iTextSharp.text.pdf {
         }
     
         /**
-         * Appends a Bêzier curve to the path, starting from the current point.
+         * Appends a Bï¿½zier curve to the path, starting from the current point.
          *
          * @param       x2      x-coordinate of the second control point
          * @param       y2      y-coordinate of the second control point
@@ -751,7 +751,7 @@ namespace iTextSharp.text.pdf {
         }
     
         /**
-         * Appends a Bêzier curve to the path, starting from the current point.
+         * Appends a Bï¿½zier curve to the path, starting from the current point.
          *
          * @param       x1      x-coordinate of the first control point
          * @param       y1      y-coordinate of the first control point
@@ -2844,9 +2844,9 @@ namespace iTextSharp.text.pdf {
             prs.AddDefaultColor(name, obj);
         }
 
-        public void Transform(System.Drawing.Drawing2D.Matrix tx) {
-            float[] c = tx.Elements;
-            ConcatCTM(c[0], c[1], c[2], c[3], c[4], c[5]);
+        public void Transform(System.Drawing.Drawing2D.Matrix tx)
+        {
+            throw new NotImplementedException();
         }
 
         /**

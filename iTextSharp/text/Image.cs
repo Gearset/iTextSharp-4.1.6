@@ -521,10 +521,9 @@ namespace iTextSharp.text {
         /// <param name="image"></param>
         /// <param name="?"></param>
         /// <returns></returns>
-        public static Image GetInstance(System.Drawing.Image image, System.Drawing.Imaging.ImageFormat format) {
-            MemoryStream ms = new MemoryStream();
-            image.Save(ms, format);
-            return GetInstance(ms.ToArray());
+        public static Image GetInstance(System.Drawing.Image image, System.Drawing.Imaging.ImageFormat format)
+        {
+            throw new NotImplementedException();
         }
     
         /// <summary>

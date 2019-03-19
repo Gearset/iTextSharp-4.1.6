@@ -1,0 +1,6 @@
+/obj/**
+/.idea/**
+/.vs/**
+/bin/**
+/itextsharp.sln.DotSettings.user
+/iTextSharp.xml
