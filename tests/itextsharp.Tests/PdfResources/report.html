@@ -1,0 +1,174 @@
+﻿<!-- Header -->
+<body color="#4B4B4B" style="font-family: 'Roboto.ttf'; font-size:14px">
+    <div class=" summary-header">
+        <table widths="1,4,4">
+            <tr>
+                <td>
+                </td>
+                <td style="font-size: 18px; font-weight: bold">Deployment successful</td>
+                <td id="right" align="right" style="font-size: 10px; font-weight: bold; color: #F89B22">{DEPLOY_END}</td>
+            </tr>
+        </table>
+    </div>
+
+    <img width="495" height="1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAAMSURBVBhXYzh27BgABKgCU2fzRdIAAAAASUVORK5CYII=" />
+
+    <br />
+    <br />
+
+    <!-- Deployment info -->
+    <p style="font-size: 12px;">
+        {DEPLOY_MESSAGE}
+    </p>
+
+        <br />
+
+        <!-- Source & Target -->
+        <div class="summary-table">
+            <table widths="1,4,1,4" bordercolor="#c6c6c6">
+                <tr>
+                    <td bgcolor="#000000" rowspan="3" align="center" valign="middle">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADkSURBVEhL3ZOxDcJADEVzJ+jDDhQMwCAUDJCeEWABetggLX06Wkp6CloKJJCSgiK68GzuNnCQkic5tq/4ztnn7C90XVeEEF54E9CqsZ1oO/mIuHMul9gK6rTe+6kWkKp6agw/7XyMe0MLcIGrZoag+RSfWrTA1txoIrkF6FXM4BLTAZOe6RK3xayeaoMdaVGVCtzo/1xiK5jBmwKz8ezBQzND0PyITy1aYRtCsz2AEzM4xHjApBblWMHQTfYArQatEvvNlj04c2gKmnfRHs8e6JvtAy3ATfYUafXECPTKGPZJln0B7mQKddsost8AAAAASUVORK5CYII=" />
+                    </td>
+                    <td align="right" bordertop="1" style="font-weight: bold;">Source</td>
+                    <td rowspan="3" align="center" bordertop="1" borderbottom="1">
+                        <img height="32" width="32" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATpSURBVGhD7ZhfaFt1FMd/5+beMrFghAgRB1ZBnamayja0rZLuQXDiQJnFDX1QcCD4oC/i05CxJxWZPuuDCKJiZRsKHSjMsLaZf2aTLY1V9qDYh+jy0EKR0tz8juckpzHNvbm5/9YX84HS3zlpes/3nt/v/M7vpwYM+J8D8js27sk+NGIZiZRWRkppnWYfoFFrmFjDhl1NJ3et5PN5u/nHMRBZQC6XM/9ea0wZCg+jUk/SP9wtH7mDWFMAX2vUZ/9JDp37I5/fkE9CEVpANptL2sp+jSJ6hQJKiTsguE6iP1SW9Vblx3xVnIEILOD2XG7X8Kr9Ms2LN+jrzSkSFVS4Cgjvm8p8r1TKr4rbF4EEZPbn0lCvn6avPSyuWKFsLBsJ/XT5UmFZXH3xLSCTnRijqfJV3zkeEc4GKmP6l+Lct+LyxJDfnoxmJ6cA1IXrHTwDCpKAejYzNv6MuDzpm4H79o7vQRsuhF+oYcEN1PBY5fL8nDhc8RTAlaYOdoH+aI+4dhis2tgY/7X0/e/icOA5hahMfhAteC6TepoXpzgCAumEMr8Qw5WeAnjeU358zUN3KHgNByvFwoyyzANhRdDa20cF5AUxHfQUQA98R4YhkOBl/vImZSfMR8nvOZ97AnCS9x+xtuEqYPTB8SOsXMzgIBzvXny/XcrXcNM6GEYEV78b13jXd+KeATSelVE4AE9mHph8RKw2lUp+PYII15gcVSiTyQ3DUP0afeSaMv9sn0adyDNm6RkOkV4gNO6qLF68KmYTRwbQqj8VPXgGhsHA2T6ZOCcuX4BOHJFhG4cA2glzMowBbxGpm6xDVC1mxOUDdMTmXAOAsXSY/9FbBB9sUknzqG8RLt2AYw2Mjk0UyN2z27TRvsNrZwwDH4pqq/anFE2ffQerS8WFW8Vo4lKF4unxg+A/E87YnItYKVOGOwqLQMAVMX3jzACqUEe7qGTGJk5RAXHdrNrweboLtzXA9flxMR1QhlboSyFuFXCZSuc0Vx9xtPEVfIvyUnH+fhk3cVsDnhmg4PlQMxLkh0RvoGW9GDF4ennODLgIwHkZxAS1DZvm/u5bB648mewktev+ghccu7pDQD1hnUHEmC6ecI533O43v1U2qWF8SVz+QPWljNo4BHDXSNPkOzEj4B18/5rfBaqrldJCUaw2LlOIAPW5jEKCF2MNnqAS+5kMt+EqgHqUj1ixmGEYMW7Y3HaDwQeS0MErXLXQelfMbbgK4E1FK/26mCGANDbgPN9osMXt8/Ba/ZswwTOAcKLXjZ1jH+iEStx5qhJTYoYAq7RQDyGqU/SoQL1/G5oJ1Gbc2+tG21MAX5WbkODmbsf7oxa4Ti/gQHlx4SdxOHBfxAJ3nXSqmo6vrAYE8JhX8IynAEaOhMda1g6C6sTSYsG18nSSkN+eXPvrz+It6d1LNN+eoNcyJO7rQivb8GqlNP+2uDzxXAPd8A01AJymIfc48UPdpgbjqN+bacZXBragTFRvvu3OTwxsDJHyMdIfy9mB3zq9mI9t1XhuuVT4Wdy+CJSBTloVynyTHv48PTyKkDMNrY8vXy6UxQ5EaAFb3L03l7IafBWjDtMP7RneVzLNOQ5qjjans4auz1y58kPgU1gnkQV00rywsux9CDqFAClDt/YPOg/UwNA1pY1q3TTL3DA2vzBgwICIKPUvDioBf1EkTgcAAAAASUVORK5CYII=" />
+                    </td>
+                    <td bordertop="1" borderright="1" style="font-weight: bold;">Target</td>
+                </tr>
+                <tr height="20" style="font-size: 10px;">
+                    <td align="right">{ORG_SOURCE_NAME}</td>
+                    <td class="target" borderright="1">{ORG_TARGET_NAME}</td>
+                </tr>
+                <tr cellpaddingbottom="8" style="font-size: 10px;">
+                    <td align="right" borderbottom="1">{ORG_SOURCE_TYPE}</td>
+                    <td class="target" borderbottom="1" borderright="1">{ORG_TARGET_TYPE}</td>
+                </tr>
+            </table>
+        </div>
+
+        <br />
+        <br />
+
+    <p style="font-size: 15px; font-weight: bold;">Deployment summary</p>
+
+    <br />
+
+    <!-- Items Deployed -->
+    <div class="summary-table">
+        <table widths="1,3,3,3" bordercolor="#c6c6c6" cellpadding="8">
+            <tr>
+                <td bgcolor="#F89B22" rowspan="2" align="center" valign="middle">
+                    <img height="24" width="24" src="data:image/png;base64,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" />
+                </td>
+                <td colspan="3" align="center" valign="middle" bordertop="1" borderright="1"><strong>{DEPLOY_OBJ_TOTAL}</strong> items deployed</td>
+            </tr>
+            <tr cellpaddingbottom="16">
+                <td align="center" valign="middle" borderbottom="1"><font style="color: #666666; font-size: 12px">Changed:</font> <strong>{DEPLOY_OBJ_CHANGED}</strong></td>
+                <td align="center" valign="middle" borderbottom="1"><font style="color: #666666; font-size: 12px">New:</font> <strong>{DEPLOY_OBJ_CREATED}</strong></td>
+                <td align="center" valign="middle" borderbottom="1" borderright="1"><font style="color: #666666; font-size: 12px">Deleted:</font> <strong>{DEPLOY_OBJ_DELETED}</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Code Coverage -->
+    <div class="summary-table">
+        <table widths="1,3,3,3" bordercolor="#c6c6c6" cellpadding="8">
+            <tr>
+                <td bgcolor="#F89B22" rowspan="2" align="center" valign="middle">
+                    <img height="24" width="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVHhe7d3BTcMwGEDh/EzQERihI3SUsglMApuwRm/l2Cli/ii+EdJWKW3Me5+EHCsQfHgiCpKb6HR3fd8fI+K5Th/qqY6CMgA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAazaAUso+v9bitS6rOf4FgDMAOAOAMwA4A4AzALhmPyYuH732ObyPs5/y/CGH0zhbbBMR23o85S3PX/wouKaPiWvWEMDwAD5jCOQm8lq78ZK/uur/AEMA9ecezlsAnAHAGQCcAcAZAJwBwBkAnAHAGQCcAcAZAJwBwBkAnAHAGQCcAcAZAJwBwBkAnAHAGQCcAcAZAJwBwBkAnAHAGQCcAcBFKWU1u1Qj4qsenpXrnt0dnF7yeh/1eJH8XbscPsfZpHZ3Bw87RNeiLuki+e3uDr4BbwFwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwwytjrnpTx1+KVA/PymXPvjImzx9yOI2zxTa5tG09ntLsK2P+bQB31mwA3gLgDADOAOAMAM4A4AwAreu+ASWf/uIcw5uZAAAAAElFTkSuQmCC" />
+                </td>
+                <td colspan="3" align="center" valign="middle" bordertop="1" borderright="1">Test results</td>
+            </tr>
+            <tr cellpaddingbottom="16">
+                <td align="center" valign="middle" borderbottom="1"><font style="color: #666666; font-size: 12px">Tests run:</font> <strong>{TESTS_RUN}</strong></td>
+                <td align="center" valign="middle" borderbottom="1"><font style="color: #666666; font-size: 12px">Tests passed:</font> <strong>{TESTS_PASSED}</strong></td>
+                <td align="center" valign="middle" borderbottom="1" borderright="1"><font style="color: #666666; font-size: 12px">Run time:</font> <strong>{TESTS_TIME}</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Deployment Time -->
+    <div class="summary-table">
+        <table widths="1,5,4" bordercolor="#c6c6c6" cellpadding="8">
+            <tr>
+                <td bgcolor="#F89B22" rowspan="3" align="center" valign="middle">
+                    <img height="24" width="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAALrElEQVR4nO2df7BVVRXHPzxoAiSVFMER49XYyI/CyADTJ1KgafGztBkYJrCoJpspY0ahmrL6w0otdZrKqZCymBAzzdQ0CJSECk2fxq+iKcFU6KUkxM8e7/bH9964Ph6Pfc5a58d953xm7jiD76y971nr7h9rrb12r0qlQklxacq6AyXZUhpAwSkNoOCUBlBwSgMoOKUBFJzSAApOaQAFp0/WHUiI/sDZwEhgODAUGAKcDpwC9AP6Vj8V4ACwv/ppA3YALwLPAZuBTcBW4FCaXyINevUQT2AzMAG4oPoZCfRybqMdaAXWVj9rgJ3ObaROIxvAeGBa9fOWDNqvAOuB+4BfABsz6IOZRjOAM4EPAfOAs7LtylG0AkuApcBL2XYlnEYxgBbgGmAK+V+4HgKWAzcCz2Tcl+OSdwOYBnwWOC/rjsTkYeB6tF7IJXk1gBbg68D5WXfEiQeBRcCfsu5IZ/JmAG8AbgVmZNyPJOgA7kBT2b8y7sv/yct82htYgPbbM7LtSmI0ocXrFuBK/LepscjDCDAcrZzfnnVHUuYRYC6wPctOZD0CfBz4I8VTPsBE4Gngg1l2IqsRYADwQ+ADWTSeQxYDnwQOpt1wFgbwRuQ5e2vaDeec3wMzURwiNdKeAiYAj1MqvyvOA54g5ekwTQOYghwjp6TYZqNxBrAauCitBtMygNnAPSj8WtI9JwIPoR9M4qSxBpgF/IRsdhw7UcRuE4rrb0dzbBtHcgCakGH2BwajvIFmFFIeBYwFTkq536Dw80zg/iQbSdoApqBfflqJJweAlShEuxr4q4PMJhRungRMR27q3g5yQzgAXIZ8BomQpAFcCPyadIb9NSgUexewN+G2TgXmIK/eOQm3BbAHeBfyl7iTlAE0o9X+qUkIr9IOLANuILsgy0XAtehXmqRr9wU0Fb3gLTgJAxgArCO5rV4FuBP4PPC3hNqIyhjga8AlCbaxHhncAU+hSSzMlpCc8jegVLBZ5Ef5AE8B7wEuJTnf/jjgNm+h3gbwMeByZ5kAh4GvAueiqSWvPIwWjN9PSP5cZPxueE4BZwNPou2UJ5vRF8+z4rviYuAHKMfBk91o8fmshzCvEaA32ut7K/9nyDXaaMoHWAGMBlY5yz0R+DFOi04vA/gU8A4nWTVuRqFS10VPyryC1gV3OMttQdOtGY8p4EzkaRtg7w6g1KkFKDWsJ/EV4AuO8v4NjMAYPfQYAW7BV/mz6XnKB/gi8AlHeScD37AKsRrA+cD7rZ2oYwHa46fJO9Gpng7kY6h9Oqr/Ps6xrdvQSODFLIzhY+sU8Bg6i+fBLcBnnGRFYRMaSrv7/6Oc27wdJYZ68BtgctyHLQYwFQVdPPg5cAX61aVNB92vqCv4+0v6AA/g5zm8BO06ImMxgHVo+LSyBQ1j+x1kxSHkBSTh538dOjrW7CDrERQwikxcy27BR/mHUVQtK+VnyR7gw4QZ4PGYSMxteFwDuCbmc525CfiDk6xGZDXwbSdZC+M8FGcKGApswz4vbkJDf+qp0J3Iagqo0R+dD7Aed29HPplIfoE4Spwb87l6Kmj4y1r5eWAfMN9BTh9UOyEScRQ5L8YznbmTYg/9nXkUnZWwEnlrGXUKGI8OMFhoR5HDvMTzs54CaoxA+Q7W0fVcFJUNImpj0yP+fVcsIz/KzxObkT/ESiQdRR0BNmD3io0mX4US8jICgLZy1tD308DbQv84ygjQjF35a8iX8vPGE9in2HPQbiCIKAYwIXpfjuJ2Bxk9nSUOMoJ1FcUAWmJ0pJ79KMOnpHuWYa9IGqyrKAZgjfqtJPlDGz2B3djTyIJ1FWoA/ek+ZBrCL43PFwmrT2AUgSeyQg1gOPaV8Grj80XC+q6akM6C/jCEkfH7Asg/7XFQsyj8GZ1gthCksygjgIX1xueLiPWduY4AQw0dAUX+SqJhfWdBOgs1gCGGjoDcnCXRsBpAkM5CDeB0Q0cg42KIDcpzxueDdBZqANbCTi8any8i1ncWVJsh1AD6GToCOSqO3EBYdwFBOgs1AGuZlyImfVqxvjNXR9BrDR2BMvUrDrkyACtJxNOPdaQr6ieveORdujViPaJtHUG6YjHJXA+XF6zrriCdpWUA3oUjwO6dzDu5MoB9ho4AnGZ8vit66i+/xmDj80E6CzUA6zbO6kgqItZ3FrSNDDUAq1Oi2fh8ERlmfD5IZ6EGYL3EwJpM0hVpreCz2il4hOCPS6gBWH353gUWQDHzNMgqkGV9Z0E6CzWALYaOgE4UeS/a5qN+JfULrSDle5zbi0oT9tI0QYYbWsbdGpo8GVXQ9DwTsJZkppY8MBrVA7QQZAChI8BfUDEHC5OMzxcJ67tqRzo7LqEGcBD7TdhTjc8XCesZzFbgvyF/GMXfvDZWV45wIfB6o4wiMBj7pdnBuopiAI/F6Eg9r0FFIEu6Zw72K2mCdRXldPAQdGOFZTX/FMW8JjYK1hPYHciL+M+QP44yAuxAp1ctjMF+xrAnMxn7/n89gcqH6DFnj+NdXhXGeiIe7yZS8c6oBSJGowIEFipoJLDK6WmMw6du0igi+G2ijgDPYHfm9EIXLJW8mhscZDxJRKddnLQjjwIGl6JLlkrEdHzuC45cgCNOochBwPNoW2dhG7pdbI9RTqMzEOU2WuP/B6sydkV5KM4I0IZu6LQyDLjRQU6j8y18EmZ+SkTlQ/xq4WOIUIvuOFyMqocUkRnobmUrFTSaboz6oKVc/Ep8AjzbUGWrVxxkNRKD0ILamvsH8CDwvjgPWnLPrzc8W88w4G7sa4pGoh8qA+OhfDDowmIAq9Dt4B5MAr7nJCvvNKE7Fj3uWwA5fmIH6qynTxbil5EzD7jOSVae+SZ+F20dBhZZBFgNoBVZsxdfwulCxJyyCPi0o7zFGHMWPS6OHFztxECroDquw/d6taxpQr98T+W3odNRL1uEeBwO3YlxGOqCL6MbuENzFvNMP+Q38VQ+6I5Fk/LB7/bwXqgQtHeo91fo/uD/OMtNi0Fote+14KuxAqcr57yOh1fQdSW7neTVuAxFDT0KVafNdLTP91b+S/jc2gL41gf4O3CVo7wab0L34t2M/cRsGgxE17vfi98+v575KDPLBe8CEUuBHznLBE0xV6NdR54ziqYjd+ychOR/BxmWG15rgHr6Ar8l5kWGgdwNfI7A3PcUGIvi+RMTbGMNShkLSvcOJQkDADgD5Q9aC0x2x2FgOXrxrQm20x3vBq4l+dyGbcjIrJXDjiIpAwB1eBUwIKkG6liLkiGWk/yO4TQ0xF+JjrslzS6ULJLIVTtJGgDIx/8AydQI6ooD6Dr1+1DJ9a0OMptQqHUyMA1dxmDN2w9lb7Vd6z1CxyRpAwDFvO8iG6fOTpQmvRF5K7ej9PY2ZCwH0AKzL6pjNBhNW83ofP4olKx5Usr9BmX4TCHhXIk0DABgJspYSWskaHT2oh9O4okyaRkAKPPnHuCEtBpsUHYB7yXBYb+etApFgtyXk9GwXNI1zyKvZyrKh3QNAPTFxqIzgiWvZg16NxvSbDRtAwDVwW9Ba4IS8V00OqZeVT0LAwAVMZwNfIRi3yX4MsoOugpnD18oaS4Cj8WbUVaRtShSo7ECOZOez7ITWY0A9WxFIdOrady4fxTagLkonp+p8iEfI0A9Q1HY9/KsO5IAHchdvRCHTB4v8jAC1PMP4ApUI8dakiZP3I+O1n+UHCkf8mcANX6HikpNBdZl3BcLD3Hke0Q+tpUGeZsCjsUFqHrGVPJrtDUOoSvgbyKhCJ4njWIANYaiBdQ84Kxsu3IUrah2wlKUt9cQNJoB1DMepWBNJZ24fGcqwOMo9HwvOR3ij0cjG0A9w1DSREv143HdfWfaUYmctWiB+ig9IK7RUwygMycgIxhR/e9QVIRhCLpRs2/1UwtP13ID9qF9+g504cJ2VJF8MypPfyi1b5ASPdUASgLJ+4q6JGFKAyg4pQEUnNIACk5pAAWnNICCUxpAwSkNoOD8D9WlicQV5E08AAAAAElFTkSuQmCC" />
+                </td>
+                <td colspan="2" align="center" valign="middle" bordertop="1" borderright="1">Deployment time</td>
+            </tr>
+            <tr>
+                <td cellpaddingleft="16" align="left" valign="middle" style="font-size: 11px"><font style="color: #666666; font-size: 12px">Started:</font> <strong>{DEPLOY_START}</strong></td>
+                <td borderright="1"></td>
+            </tr>
+            <tr cellpaddingbottom="16">
+                <td cellpaddingleft="16" align="left" valign="middle" style="font-size: 11px" borderbottom="1"><font style="color: #666666; font-size: 12px">Finished:</font> <strong>{DEPLOY_END}</strong></td>
+                <td align="center" valign="middle" borderbottom="1" borderright="1"><font style="color: #666666; font-size: 12px">Total time:</font> <strong>{DEPLOY_DURATION}</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Deployment Notes -->
+    <div class="summary-table">
+        <table widths="1,9" bordercolor="#c6c6c6" cellpadding="8">
+            <tr>
+                <td bgcolor="#F89B22" rowspan="3" align="center" valign="middle">
+                    <img height="24" width="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVHhe7ZshT8NAGIbXaiRiAoObwOIQTJCA4AcgSJbwCyb5B8j9AxA4lmBxE+BAkjBBwgQCiZhcNt6PvllSrmG7ck3u+L4nuby9a9Pe99BeaQJZ6wfz+XyUZdk+u1GwWCyeMacDtA8OBSNnRg0K34GEEVqbQ8FIQoAACZ0mJCQjQGhCQlIChNASkhMghJTg9RbABSfcbIoNXHuT2yvBfMY4vosW7u0gAnDiSnhIY+ASveJKBZjLLdo9u5Vg/wui9p0Q+yPwiZ/uEQq8Y98B+//0OES/BqDAKdoxChxyyIESHtE6HFqbJBZBFDhDO0GBAw45YP8W9sud4CUhmbeASMjzvI8CLzjkgGPavhKSew1CwjkK7LPr4CshOQECJAxQ4CnajEMlfCQkKUCAhGuErAvTYqTMuhKSFSBAwhCFymuytoSkBQgo8gHRRZGVvw2ukpC8AAF3whMKFQnvHCrxm4R/IUBAkfJdsIsixxwqQQk37C7x+hjCuHN8SDDBHuKy6H33XxFyi/vQxjQPuV0C55vgbtlmt5qYPoZCg9reeKkl/+YRqIt6AbGtAXtoZ+zWBtOUtcQB5457DQgFp+tga0AFJoCpFhPAVIsJYKrFBDDVYgKYajEBTLWYAKZaTABTLSaAqRYTwFSLCWCqxQQw1WICmGoxAUy1mACmWtQL8P2XmStuRo3PX4h4CUidKgG2BjDVYgKYalEuoNX6Akxm+ncTJNmJAAAAAElFTkSuQmCC" />
+                </td>
+                <td colspan="1" align="center" valign="middle" bordertop="1" borderright="1">Deployment notes</td>
+            </tr>
+            <tr>
+                <td colspan="1" borderright="1" cellpaddingleft="16" align="left" valign="middle" style="font-size: 11px"><strong>{DEPLOYMENT_FRIENDLY_NAME}</strong></td>
+            </tr>
+            <tr cellpaddingbottom="16">
+                <td borderright="1" borderbottom="1" cellpaddingleft="16" align="left" valign="middle" style="font-size: 11px">{DEPLOYMENT_NOTES}</td>
+            </tr>
+        </table>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Jira ticket references -->
+    <div class="summary-table">
+        <table widths="1,9" bordercolor="#c6c6c6" cellpadding="8">
+            <tr>
+                <td bgcolor="#F89B22" rowspan="2" align="center" valign="middle">
+                    <img height="24" width="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABCUlEQVRIS7WVYQ3CMBBG3ykABwQHSMABOAAUAAoICsACDoYCkIAELKDgyC2FMNat1w36a8mu77W39auQMVR1COyAJWDPqVFIquL1PsAvwMQ7x+pcgq5wl6APPClwws/AHZgDo+/2NbbICd+KyNGgof72LYkKnHBEpDJfVU22/txFTeCFB8hYRKw95VDVApg1CjLhxrGWrMI3WABlu6KCDnDXcShb9C848JA/wm3texNsgINrv3lFJxFZmsCy5QoM8ua3Vpfw90n+seQNr0TFjyQVeC2Lekpq8GjYdZRE4Y1pmilphLfGtVPSCvfcB22/cBKeFIQYiUlccJcgInHD3YIPyfR1g3lP/RNN1IALyNcZ2AAAAABJRU5ErkJggg==" />
+                </td>
+                <td colspan="1" align="center" valign="middle" bordertop="1" borderright="1">Associated Jira tickets</td>
+            </tr>
+            <tr cellpaddingbottom="16">
+                <td borderright="1" borderbottom="1" cellpaddingleft="16" align="left" valign="middle" style="font-size: 11px">{JIRA_TICKETS}</td>
+            </tr>
+        </table>
+    </div>
+
+    <br />
+    <br/>
+
+    <!-- Deployment Details-->
+    <p style="font-size: 15px; font-weight: bold;">Deployment details</p>
+    <img width="495" height="1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAAMSURBVBhXYzh27BgABKgCU2fzRdIAAAAASUVORK5CYII=" />
+    <br />
+    <div class="summary-table">
+        <table widths="2,2,4" style="font-size:12px">
+            {DEPLOY_OBJ_DETAILS}
+        </table>
+    </div>
+
+</body>
