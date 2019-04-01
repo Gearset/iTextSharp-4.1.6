@@ -4,3 +4,7 @@
 /bin/**
 /itextsharp.sln.DotSettings.user
 /iTextSharp.xml
+/src/obj/**
+/tests/itextsharp.Tests/bin/**
+/tests/itextsharp.Tests/obj/**
+/src/bin/**
