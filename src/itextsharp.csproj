@@ -5,7 +5,7 @@
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0;net9.0;</TargetFrameworks>
     <AssemblyTitle>iTextSharp</AssemblyTitle>
     <Description>iTextSharp 4.1.6 with added support for tables and images</Description>
     <Copyright>Copyright (C) 1999-2009 by Bruno Lowagie and Paulo Soares. All Rights Reserved.</Copyright>
